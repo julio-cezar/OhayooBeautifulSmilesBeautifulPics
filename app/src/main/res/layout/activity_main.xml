@@ -27,7 +27,8 @@
       android:id="@+id/camera_preview"
       android:layout_width="fill_parent"
       android:layout_height="0dp"
-      android:layout_weight="1">
+      android:layout_weight="1"
+      android:onClick="SwitchCam">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -39,7 +40,7 @@
         android:layout_gravity="center"
         android:elevation="10dp"/>
 
-    <Button
+    <!--<Button
         android:id="@+id/btPic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,6 +48,26 @@
         android:onClick="callCameraPic"
         android:layout_gravity="left|bottom"
         android:elevation="7dp"
+        />-->
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="SwitchCam"
+        android:id="@+id/btSwitchCam"
+        android:layout_gravity="right|top"
+        android:elevation="7dp"
+        android:background="@drawable/invertida"
+        />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="takePic"
+        android:id="@+id/btTakePic"
+        android:layout_gravity="center_horizontal|bottom"
+        android:elevation="7dp"
+        android:background="@drawable/ic_menu_camera"
         />
 
     <Button
@@ -57,26 +78,8 @@
         android:id="@+id/btGallery"
         android:layout_gravity="right|bottom"
         android:elevation="7dp"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="foto 2"
-        android:onClick="takePic"
-        android:id="@+id/btTakePic"
-        android:layout_gravity="center|bottom"
-        android:elevation="7dp"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="inverter"
-        android:onClick="SwitchCam"
-        android:id="@+id/btSwitchCam"
-        android:layout_gravity="left|top"
-        android:elevation="7dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
         />
 
 
