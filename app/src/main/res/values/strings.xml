@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ohayoo -beautiful Smiles  beautiful Pics</string>
+
+    <string name="uri_imagem">URI image</string>
+    <string name="edit_image">Edit image</string>
+
+    <string name="adobe_secret_key">877d5048-4fca-45d3-a58a-fb14acbbf557</string>
+    <string name="adobe_id">0d37154f8ad943f281463c1be7a7fbbe</string>
+</resources>

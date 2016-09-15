@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="br.com.maracujasoftware.ohayoo_beautifulsmiles.MainActivity">
+
+  <!--  <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_uri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        android:hint="@string/uri_imagem"
+        android:layout_below="@+id/iv_img"/>
+
+   -->
+  <FrameLayout
+      android:id="@+id/camera_preview"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editedImageView"
+        android:adjustViewBounds="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:elevation="10dp"/>
+
+    <Button
+        android:id="@+id/btPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="foto"
+        android:onClick="callCameraPic"
+        android:layout_gravity="left|bottom"
+        android:elevation="7dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gallery"
+        android:onClick="callGallery"
+        android:id="@+id/btGallery"
+        android:layout_gravity="right|bottom"
+        android:elevation="7dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="foto 2"
+        android:onClick="takePic"
+        android:id="@+id/btTakePic"
+        android:layout_gravity="center|bottom"
+        android:elevation="7dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="inverter"
+        android:onClick="SwitchCam"
+        android:id="@+id/btSwitchCam"
+        android:layout_gravity="left|top"
+        android:elevation="7dp"
+        />
+
+
+  </FrameLayout>
+
+</LinearLayout>
