@@ -350,7 +350,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 // Do something after 5s = 5000ms
                 //buttons[inew][jnew].setBackgroundColor(Color.BLACK);
-                Toast.makeText(MainActivity.this, "" + mCurrentPhotoPath, Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(MainActivity.this, "" + mCurrentPhotoPath, Toast.LENGTH_SHORT).show();
                 picUril = Uri.parse(mCurrentPhotoPath);
                 Log.d("paths ", "" + picUril);
                 Intent picIntent = new AdobeImageIntent.Builder(getApplicationContext())
